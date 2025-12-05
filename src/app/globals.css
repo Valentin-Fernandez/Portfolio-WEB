@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import 'tailwindcss';
+
+/* #293132 #E1E6E1 #46494C #F0F2EF*/
+@theme {
+    --color-text-primary: #46494c; /* Secundario */
+    --color-text-secundary: #ffffff; /* Texto secundario */
+    --color-background: #f0f2ef; /* Fondo */
+}
+
+body {
+    background-color: var(--color-background); /* azul oscuro, puedes ajustar */
+    font-family: 'Inter', 'JetBrains Mono', monospace, sans-serif;
+    @apply text-text-primary;
+}
