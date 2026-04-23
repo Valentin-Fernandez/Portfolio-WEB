@@ -1,15 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import 'tailwindcss';
 
-/* #293132 #E1E6E1 #46494C #F0F2EF*/
 @theme {
-    --color-text-primary: #46494c; /* Secundario */
-    --color-text-secundary: #ffffff; /* Texto secundario */
-    --color-background: #f0f2ef; /* Fondo */
+    --color-background: #f4f6f1;
+    --color-surface: #ffffff;
+    --color-foreground: #202628;
+    --color-muted: #6e7478;
+    --color-accent: #2f9e7e;
+    --color-accent-dark: #247b64;
+    --color-line: #dce3dc;
+    --color-text-primary: #202628;
+    --color-text-secundary: #ffffff;
 }
 
 body {
-    background-color: var(--color-background); /* azul oscuro, puedes ajustar */
+    background:
+        radial-gradient(circle at top left, rgba(47, 158, 126, 0.14), transparent 34rem),
+        linear-gradient(180deg, #f4f6f1 0%, #eef2ec 100%);
     font-family: 'Inter', 'JetBrains Mono', monospace, sans-serif;
-    @apply text-text-primary;
+    @apply text-foreground;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: var(--color-accent);
+    color: var(--color-surface);
 }

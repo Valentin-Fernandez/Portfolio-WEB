@@ -1,38 +1,26 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
-import { CgMail } from 'react-icons/cg';
 
 const About = () => {
     return (
-        <div className="container mx-auto mb-32">
-            <div className="flex flex-col-reverse md:flex-row md:justify-end justify-center items-center p-4">
-                <div className="space-y-4 flex md:flex-col my-4 space-x-4">
-                    <a className="w-18 h-18 bg-text-primary rounded-xl flex items-center justify-center hover:scale-105 transition-transform duration-300" href="https://github.com/Valentin-Fernandez">
-                        <FaGithub className="text-text-secundary text-4xl" />
-                    </a>
-                    <a
-                        className="w-18 h-18 bg-text-primary rounded-xl flex items-center justify-center hover:scale-105 transition-transform duration-300"
-                        href="https://www.linkedin.com/in/valentin-f-098368292/"
-                    >
-                        <FaLinkedin className="text-text-secundary text-4xl" />
-                    </a>
-                    <a
-                        className="w-18 h-18 bg-text-primary rounded-xl flex items-center justify-center hover:scale-105 transition-transform duration-300"
-                        href="mailto:dev.valentinfernandez@gmail.com"
-                    >
-                        <CgMail className="text-text-secundary text-4xl" />
-                    </a>
+        <section className="container mx-auto px-4 py-20 md:px-0" id="about">
+            <div className="grid overflow-hidden rounded-lg border border-line bg-foreground text-surface shadow-sm md:grid-cols-[0.85fr_1.15fr]">
+                <div className="border-b border-surface/10 p-8 md:border-b-0 md:border-r md:p-10">
+                    <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">Sobre mi</p>
+                    <h2 className="mt-4 text-4xl font-semibold md:text-5xl">Construyo productos web con foco en utilidad real.</h2>
                 </div>
-                <div className="max-w-2xl md:ml-8 ml-0 p-12 bg-text-primary rounded-xl text-text-secundary">
-                    <h2 className="text-2xl font-semibold text-center">Sobre mi</h2>
-                    <p className="text-base max-w-lg mt-4">
-                        Soy Desarrollador Full Stack con experiencia construyendo aplicaciones web para negocios y proyectos reales. Me enfoco en crear interfaces claras, funcionales y fáciles de
-                        usar, conectadas a backends sólidos y bien estructurados. Busco seguir creciendo profesionalmente y trabajar en proyectos donde pueda aportar valor real.
+
+                <div className="grid gap-6 p-8 text-base leading-8 text-surface/80 md:p-10">
+                    <p>
+                        Soy desarrollador Full Stack y me especializo en aplicaciones para negocios y procesos operativos: catalogos, pedidos, paneles administrativos, gestion de datos y experiencias
+                        responsivas. Me gusta transformar necesidades concretas en interfaces simples, backends ordenados y flujos que se puedan usar todos los dias.
+                    </p>
+                    <p>
+                        Trabajo con React, Next.js, Node.js, Express, MongoDB, MySQL y Tailwind CSS. Busco proyectos donde pueda aportar criterio tecnico, claridad visual y una implementacion
+                        mantenible desde el primer dia.
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
