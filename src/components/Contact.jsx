@@ -14,16 +14,16 @@ const Contact = () => {
                     </p>
                 </div>
 
-                <div className="flex flex-col gap-3">
+                <div className="flex min-w-0 flex-col gap-3">
                     <a
-                        className="inline-flex min-h-12 items-center justify-center gap-3 rounded-lg bg-accent px-5 py-3 font-semibold text-surface transition-colors duration-300 hover:bg-accent-dark"
+                        className="inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-lg bg-accent px-4 py-3 text-center font-semibold text-surface transition-colors duration-300 hover:bg-accent-dark sm:px-5"
                         href="mailto:dev.valentinfernandez@gmail.com"
                     >
-                        <CgMail className="text-2xl" />
-                        dev.valentinfernandez@gmail.com
+                        <CgMail className="shrink-0 text-2xl" />
+                        <span className="min-w-0 break-all text-sm leading-5 sm:text-base">dev.valentinfernandez@gmail.com</span>
                     </a>
                     <a
-                        className="inline-flex min-h-12 items-center justify-center gap-3 rounded-lg border border-line bg-background px-5 py-3 font-semibold text-foreground transition-colors duration-300 hover:border-accent hover:text-accent-dark"
+                        className="inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-lg border border-line bg-background px-4 py-3 text-center font-semibold text-foreground transition-colors duration-300 hover:border-accent hover:text-accent-dark sm:px-5"
                         href="https://www.linkedin.com/in/valentin-f-098368292/"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -32,7 +32,7 @@ const Contact = () => {
                         LinkedIn
                     </a>
                     <a
-                        className="inline-flex min-h-12 items-center justify-center gap-3 rounded-lg border border-line bg-background px-5 py-3 font-semibold text-foreground transition-colors duration-300 hover:border-accent hover:text-accent-dark"
+                        className="inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-lg border border-line bg-background px-4 py-3 text-center font-semibold text-foreground transition-colors duration-300 hover:border-accent hover:text-accent-dark sm:px-5"
                         href="https://github.com/Valentin-Fernandez"
                         target="_blank"
                         rel="noopener noreferrer"
