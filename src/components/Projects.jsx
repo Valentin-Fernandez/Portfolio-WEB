@@ -53,7 +53,7 @@ const proyectos = [
     },
     {
         id: 2,
-        titulo: 'Sistema de pedidos',
+        titulo: 'CYA Distribuidora',
         subtitulo: 'Aplicacion para una distribuidora mayorista',
         estado: 'Proyecto full stack',
         problema: 'La distribuidora necesitaba ordenar el catalogo, simplificar pedidos desde dispositivos moviles y centralizar el seguimiento de estados.',
@@ -164,10 +164,7 @@ const Projects = () => {
                                 {proyecto.images.length > 0 ? (
                                     <div className="grid h-full grid-cols-1 gap-4 md:grid-cols-2">
                                         {proyecto.images.map((image, imageIndex) => (
-                                            <div
-                                                key={image.src}
-                                                className={`overflow-hidden rounded-lg border border-line bg-surface shadow-sm ${imageIndex === 0 ? 'md:col-span-2' : ''}`}
-                                            >
+                                            <div key={image.src} className={`overflow-hidden rounded-lg border border-line bg-surface shadow-sm ${imageIndex === 0 ? 'md:col-span-2' : ''}`}>
                                                 <img src={image.src} alt={image.alt} className="h-full min-h-48 w-full object-cover" />
                                             </div>
                                         ))}
